@@ -1089,11 +1089,11 @@ input::-moz-focus-inner {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   border: none;
-  color: #000000;
+  color: #cdcdcd;
 }
 
 .stats-tabs li a:hover {
-  color: #cdcdcd;
+  color: #686868;
 }
 
 .stats-tabs li a em {
