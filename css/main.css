@@ -818,16 +818,17 @@ input[type="button"] {
   line-height: 5.6rem;
   padding: 0 3.2rem;
   margin: 0 .4rem 1.6rem 0;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
+  border-radius: 10px;
   transition: all .3s ease-in-out;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d3d3d3;
-  border: 0.2rem solid #d3d3d3;
+  background-color: #121212;
+  border: 0.2rem solid #ffffff;
 }
 
 .btn:hover,
@@ -944,7 +945,7 @@ input::-moz-focus-inner {
   line-height: 6rem;
   text-indent: 0;
   background: transparent;
-  color: #000000;
+  color: #7e7e7e;
 }
 
 /* line definition style 
@@ -1513,7 +1514,7 @@ input::-moz-focus-inner {
   font-weight: 400;
   line-height: 1.259;
   letter-spacing: -0.05rem;
-  color: #343434;
+  color: #1a1a1a;
 }
 
 .item-title {
@@ -1930,7 +1931,7 @@ input::-moz-focus-inner {
 .intro-content {
   height: 100%;
   max-width: 1140px;
-  padding-top: 20vh;
+  padding-top: 18vh;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1979,9 +1980,9 @@ input::-moz-focus-inner {
   background-size: 100px 100px;
   opacity: .15;
   position: absolute;
-  top: 30%;
+  top: 29%;
   right: 0;
-  bottom: 6.5%;
+  bottom: 8.5%;
   left: 30%;
   border: #ffffff;
   border-style: solid;
@@ -2318,11 +2319,13 @@ input::-moz-focus-inner {
 .timeline__icon--work {
   background-image: url(../images/icons/icon-briefcase.svg);
   filter: invert(100%);
+  opacity: 0.4;
 }
 
 .timeline__icon--education {
   background-image: url(../images/icons/icon-education.svg);
   filter: invert(100%);
+  opacity: 0.4;
 }
 
 .timeline__block {
@@ -2330,7 +2333,7 @@ input::-moz-focus-inner {
   padding-left: 5.6rem;
   padding-bottom: .8rem;
   margin-top: 2.8rem;
-  min-height: 35.6rem;
+  min-height: 22.6rem;
 }
 
 .timeline .timeline__block:last-child {
@@ -2609,7 +2612,7 @@ input::-moz-focus-inner {
 .services-list {
   max-width: 1240px;
   margin-top: 8.8rem;
-  counter-reset: ctr;
+  /* counter-reset: ctr; */
   position: relative;
 }
 
@@ -2626,8 +2629,8 @@ input::-moz-focus-inner {
 
 .services-list .item-service__content::before {
   display: block;
-  content: counter(ctr, decimal-leading-zero) ".";
-  counter-increment: ctr;
+  /* content: counter(ctr, decimal-leading-zero) ".";
+  counter-increment: ctr; */
   margin-bottom: 4.8rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -3701,3 +3704,12 @@ html[data-useragent*='rv:11.0'] .ss-go-top::after {
   100%{background-position:0% 50%}
 }
 
+.resume-icon img {
+  transition: all .3s ease-in-out;
+}
+
+.resume-icon:hover img {
+  -webkit-filter: invert(100%);
+                filter: invert(100%);
+                transition: all .3s ease-in-out;
+}
